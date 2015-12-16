@@ -10,6 +10,7 @@
     <RootNamespace>System</RootNamespace>
     <ProjectGuid>{E4167281-C1AF-48C1-9BBD-0453BFB8CE2D}</ProjectGuid>
     <EnableStyleCop>false</EnableStyleCop>
+    <ShouldGenerateVersionConstantsFile>true</ShouldGenerateVersionConstantsFile>
   </PropertyGroup>
   <Import Project="..\Build.props" />
   <ItemGroup>
@@ -30,10 +31,7 @@
   </ItemGroup>
   <!-- Source files -->
   <ItemGroup>
-    <Compile Include="$(EnlistmentRoot)\_BuildCommon\ProductVersion\AssemblyRefs.cs" Condition="'$(BuildInOSS)' != 'true'">
-      <Link>AssemblyRefs.cs</Link>
-    </Compile>
-    <Compile Include="$(EnlistmentRoot)\src\AssemblyInfo\AssemblyRefs.cs" Condition="'$(BuildInOSS)' == 'true'">
+    <Compile Include="$(EnlistmentRoot)\src\AssemblyInfo\AssemblyRefs.cs">
       <Link>AssemblyRefs.cs</Link>
     </Compile>
     <Compile Include="ODataT4CodeGenerator.cs">

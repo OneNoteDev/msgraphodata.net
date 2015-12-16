@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <summary>LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only. </summary>
     <description>LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only. Targets .NET 4.0, and .NET Portable Lib with support for .NET 4.5, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
-OData .NET library is open source at http://odata.codeplex.com</description>
+OData .NET library is open source at http://github.com/OData/odata.net</description>
     <dependencies>
       <dependency id="Microsoft.OData.Core" version="[$VersionNuGetSemantic$]" />
     </dependencies>
@@ -79,5 +79,6 @@ OData .NET library is open source at http://odata.codeplex.com</description>
     <file src="$SourcesRoot$\src\Microsoft.OData.Core\UriParser\SyntacticAst\SystemToken.cs" target="src\Microsoft.OData.Core\UriParser\SyntacticAst\SystemToken.cs" />
     <file src="$SourcesRoot$\src\Microsoft.OData.Core\UriParser\SyntacticAst\UnaryOperatorToken.cs" target="src\Microsoft.OData.Core\UriParser\SyntacticAst\UnaryOperatorToken.cs" />
     <file src="$SourcesRoot$\src\PlatformHelper.cs" target="src\PlatformHelper.cs" />
+    <file src="$SourcesRoot$\src\AssemblyInfo\AssemblyMetadataAttribute.cs" target="src\AssemblyMetadataAttribute.cs" />
   </files>
 </package>
