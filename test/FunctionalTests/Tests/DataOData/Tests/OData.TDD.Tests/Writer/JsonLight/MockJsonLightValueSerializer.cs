@@ -68,6 +68,12 @@ namespace Microsoft.Test.OData.TDD.Tests.Writer
             this.WritePrimitiveVerifier(value, expectedTypeReference);
         }
 
+        public void WriteUntypedValue(ODataUntypedValue value)
+        {
+            this.WritePrimitiveVerifier.Should().NotBeNull("WriteUntypedValue was called.");
+            this.WritePrimitiveVerifier(value, null);
+        }
+
         public DuplicatePropertyNamesChecker CreateDuplicatePropertyNamesChecker()
         {
             return new DuplicatePropertyNamesChecker(true /*allowDuplicateProperties*/, true /*isRepsonse*/);

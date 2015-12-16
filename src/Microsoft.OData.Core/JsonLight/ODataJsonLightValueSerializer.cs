@@ -362,6 +362,18 @@ namespace Microsoft.OData.Core.JsonLight
         }
 
         /// <summary>
+        /// Writes an untyped value.
+        /// </summary>
+        /// <param name="value">The untyped value to write.</param>
+        public void WriteUntypedValue(
+            ODataUntypedValue value)
+        {
+            Debug.Assert(value != null, "value != null");
+
+            this.JsonWriter.WriteRawValue(value.RawValue);
+        }
+
+        /// <summary>
         /// Creates a new instance of a duplicate property names checker.
         /// Both ODataJsonLightSerializer and IODataJsonLightValueSerializer define this, so we pass through to our base class.
         /// </summary>

@@ -276,6 +276,12 @@ namespace Microsoft.OData.Core
                 return enumValue.TypeName;
             }
 
+            var jsonValue = value as ODataUntypedValue;
+            if (jsonValue != null)
+            {
+                return ODataConstants.ContextUriFragmentUntyped;
+            }
+
             ODataPrimitiveValue primitive = value as ODataPrimitiveValue;
             if (primitive == null)
             {
