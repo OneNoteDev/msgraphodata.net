@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>MSGraph.OData</id>
-        <version>6.10.90</version>
+        <version>6.10.91</version>
         <title>OData Lib Forked for MS Graph</title>
         <authors>zlatkom</authors>
         <owners>graphags</owners>

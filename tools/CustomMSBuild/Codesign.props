@@ -15,13 +15,17 @@
 
     <CodeSignerLogFileDir Condition=" '$(CodeSignerLogFileDir)' == '' ">$(OutputPath.TrimEnd("\"))\logs</CodeSignerLogFileDir>
     <CodeSignerLogFileName Condition=" '$(CodeSignerLogFileName)' == '' ">CodeSigner$(MSBuildProjectName)Log.xml</CodeSignerLogFileName>
+    <SigningScenario></SigningScenario>
   </PropertyGroup>
 
+<!--
   <PropertyGroup Condition="'$(SigningScenario)' == ''">
     <SigningScenario Condition="'$(Configuration)' == 'Debug'">Test</SigningScenario>
     <SigningScenario Condition="'$(Configuration)' == 'Release'">$(SigningScenarioForRelease)</SigningScenario>
     <SigningScenario Condition="'$(Configuration)' == 'Cover'">Test</SigningScenario>
+    <SigningScenario></SigningScenario>
   </PropertyGroup>
+-->
 
   <Choose>
     <When Condition="'$(SigningScenario)' == 'Delay'">

@@ -7,7 +7,7 @@
   <PropertyGroup>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>10</VersionMinor>
-    <VersionBuildNumber>90</VersionBuildNumber>
+    <VersionBuildNumber>91</VersionBuildNumber>
     <VersionFullSemantic>$(VersionMajor).$(VersionMinor).$(VersionBuildNumber)</VersionFullSemantic>
     <VersionFull>$(VersionFullSemantic).0</VersionFull>
 
